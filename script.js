@@ -4,36 +4,26 @@ let equalsButton = document.querySelector(".equals");
 let result = document.querySelector(".result");
 
 
-// 1. Convert to an arrow function.
-const calculateDoggieAge=(humanAge)=> {
-  const doggieAge=humanAge*7;
-  return doggieAge;
-};
+function calculateShopping(){
+  const age = parseInt(document.getElementById('age').value);
+  const shopFrequency= parseInt(document.getElementById('shopFrequency').value);
+  const lifeExpectancy=72;
 
-const showDoggieAge = (age)=> {
-  result.innerHTML=`Your have ${age} years old in human years!`;
-};
-const humanYears=0;
-const dogYears= calculateDoggieAge(humanYears);
-showDoggieAge(dogYears);
+  if (age <=0 || shopFrequency<0|| isNaN(age)|| isNaN(shopFrequency)){
+    document.getElementById('result').textContent="Please enter valid numbers fo age and shopping shopFrequency.";
+    return;
+  }
+  if (age>=lifeExpectancy){
+    document.getElementById('result').textContent="You've already surpassed or reached the average ife expectancy. Enjoy your shopping.";
+    return;
+  }
+  const totalShoppingRemaining=(lifeExpectancy-age)*52*shopFrequency;
+  document.getElementById('result').textContent=`You have aproximately ${totalShoppingRemaining.toLocaleString()} more times to shop at Macy's.`
+}
 
 
 
     
-
-
-
-
-equalsButton.addEventListener("click", () => {
-  const userInput=Number(input.value);
-  const doggieAge= calculateDoggieAge(userInput);
-  showDoggieAge(doggieAge);
-  });
-
-
-
-
-
 
 
 

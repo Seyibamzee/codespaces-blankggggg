@@ -13,23 +13,27 @@
   <script defer src="dogCalculator.js"></script>
 </head>
 <body>
-    <div class="main">
+    <div class="container">
   
 
     
   <h1>MACY'S LIFE TIME CALCULATOR</h1>
   <img src="https://cdn.abcotvs.com/dip/images/15784262_010925-wabc-ap-macys-closing-img.jpg">
-  
-  <div class="boxes">
-    <input type="text" placeholder="AGE" class="input" value="">
-    <input type="text" placeholder=" SHOP PER WEEK" class="inputss" value="">
-      <input type="button" class="equals" value="CHECK">
-    </div>
+  </div>
+<label for="age">Your age</label>
+<input type="number"id="age"min="1" max="120"
+placeholder="Enter your age">
+<br>
+<label for "shopFrequency">Times you shop at Macy's per week:</label>
+,<input type="number"id="shopFrequency" min="0"
+placeholder="Enter times per week">
+<br>
+<button onclick="calculateShopping()">Done</button>
+<div id="result"></div>
 
-  <div class="result">
  
   
   
 
 </body>
-</html><br>
+</html>

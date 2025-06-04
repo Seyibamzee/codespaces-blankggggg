@@ -2,7 +2,7 @@
 
 
 body{background:burlywood;}
-.main{ width:400px;
+.main{ width:100px;
 margin: 0 auto;}
 img{width:100%;
 border: 10px solid white;
@@ -28,13 +28,8 @@ font-size: 34px;}
   border-color: white;
   
 }
-.clear{
-   border-radius: 15px;
- width: 100px;
-  height:40px;
-   margin-top: 20px;
-   border-color: white;
-}
+inputss
+
 .equals{
     border-radius: 15px;
      width: 100px;
@@ -48,9 +43,4 @@ font-size: 34px;}
      margin-top: 40px;
      text-align: center;
      
-}
-.boxes{
-  display: flex;
-  justify-content: space-evenly;
- 
 }
